@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>About - GhostVista Gets Grounded</title>
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/GVGG.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/GVGG.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/GVGG.png">
+    <link rel="manifest" href="Images/site.webmanifest">
+    <link rel="mask-icon" href="Images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#0a0a1a">
+    
+    <!-- OpenGraph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gvgg.toadvillebay.com/about.html">
+    <meta property="og:title" content="About - GhostVista Gets Grounded">
+    <meta property="og:description" content="Learn more about GhostVista Gets Grounded, the animated series following GhostVista's hilarious misadventures while being grounded.">
+    <meta property="og:image" content="https://gvgg.toadvillebay.com/Images/GVGG.png">
+    <meta property="og:site_name" content="GhostVista Gets Grounded">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About - GhostVista Gets Grounded">
+    <meta name="twitter:description" content="Learn more about GhostVista Gets Grounded, the animated series following GhostVista's hilarious misadventures while being grounded.">
+    <meta name="twitter:image" content="https://gvgg.toadvillebay.com/Images/GVGG.png">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="description" content="Learn about GhostVista Gets Grounded - the animated series following GhostVista's hilarious misadventures while being grounded.">
+    <meta name="keywords" content="GhostVista, GhostVista Gets Grounded, about, animated series, cartoon, kids show">
+    <meta name="author" content="GhostVista Team">
+    <link rel="canonical" href="https://gvgg.toadvillebay.com/about.html">
+    
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+        
+        .about-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .about-text h2 {
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-image img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .team-section {
+            margin-top: 4rem;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .team-member {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+        
+        .team-member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1rem;
+            border: 4px solid var(--accent-color);
+        }
+        
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-image {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="Images/GVGG.png" alt="GhostVista Gets Grounded Logo">
+            </a>
+        </div>
+        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="seasons.html">Seasons</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="about-container">
+        <div class="about-header">
+            <h1>About GhostVista Gets Grounded</h1>
+            <p class="subtitle">The Animated Series That's Taking the World by Storm</p>
+        </div>
+        
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>GhostVista Gets Grounded is an animated series that follows the hilarious misadventures of GhostVista, a mischievous but lovable character who always finds himself in the most extraordinary situations while being grounded.</p>
+                <p>What started as a simple idea has grown into a beloved series that resonates with audiences of all ages. Our stories blend humor, heart, and just the right amount of chaos to create something truly special.</p>
+                <p>Each episode takes you on a new adventure as GhostVista navigates the challenges of being grounded, learning valuable life lessons along the way (even if he doesn't always realize it!).</p>
+            </div>
+            
+            <div class="about-image">
+                <img src="Images/GVGG.png" alt="GhostVista Gets Grounded">
+            </div>
+        </div>
+        
+        <div class="team-section">
+            <h2>Meet the Team</h2>
+            <p>The creative minds behind GhostVista's adventures</p>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="Images/founder.jpg" alt="Creator">
+                    <h3>GhostVista (Gabriel M.)</h3>
+                    <p>Creator & Lead Writer</p>
+                    <p>Creator of the silly series! Also Producer of each episode</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="Images/Mihajlo.webp" alt="Plotting">
+                    <h3>Mihajlo</h3>
+                    <p>Story Plotting</p>
+                    <p>Helps with story plotting and development.</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="Images/GVGG.png" alt="Voice Actor">
+                    <h3>TTS and GhostVista</h3>
+                    <p>Voice of GhostVista</p>
+                    <p>Gives life and personality to our beloved main character with an unforgettable voice, we use TTS and some real life voices!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <img src="Images/GVGG.png" alt="GhostVista Gets Grounded Logo" class="footer-logo">
+        <p>&copy; 2025 GhostVista Gets Grounded. All rights reserved.</p>
+    </footer>
+
+    <!-- Include Open Graph Tags Script -->
+    <script src="js/og-tags.js"></script>
+    <script>
+        // Set page-specific Open Graph tags
+        setOGTags({
+            title: 'About - GhostVista Gets Grounded',
+            description: 'Learn more about GhostVista Gets Grounded, the animated series following GhostVista\'s hilarious misadventures while being grounded.',
+            image: window.location.origin + '/Images/GVGG.png',
+            url: window.location.href
+        });
+    </script>
+    
+    <script src="js/mobile-menu.js"></script>
+</body>
+</html>

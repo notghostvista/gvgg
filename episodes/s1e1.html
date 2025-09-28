@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Episode 1: Boring Class - GhostVista Gets Grounded</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../Images/GVGG.png">
+    <link rel="apple-touch-icon" href="../Images/GVGG.png">
+    
+    <!-- OpenGraph / Social Media Meta Tags -->
+    <meta property="og:type" content="video.episode">
+    <meta property="og:url" content="https://ghostvistagetsgrounded.com/episodes/s1e1.html">
+    <meta property="og:title" content="S1E1: Boring Class - GhostVista Gets Grounded">
+    <meta property="og:description" content="Watch Episode 1: Boring Class - GhostVista gets in trouble for throwing paper in class and gets sent to the principal's office.">
+    <meta property="og:image" content="https://ghostvistagetsgrounded.com/Images/Season1.webp">
+    <meta property="og:site_name" content="GhostVista Gets Grounded">
+    <meta property="video:duration" content="41">
+    <meta property="video:release_date" content="2021-11-21T00:00:00Z">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="player">
+    <meta name="twitter:title" content="S1E1: Boring Class - GhostVista Gets Grounded">
+    <meta name="twitter:description" content="Watch Episode 1: Boring Class - GhostVista gets in trouble for throwing paper in class and gets sent to the principal's office.">
+    <meta name="twitter:image" content="https://ghostvistagetsgrounded.com/Images/Season1.webp">
+    <meta name="twitter:player" content="https://ghostvistagetsgrounded.com/episodes/s1e1.html">
+    <meta name="twitter:player:width" content="1280">
+    <meta name="twitter:player:height" content="720">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="description" content="Watch Episode 1 of GhostVista Gets Grounded: Boring Class. GhostVista finds himself in detention after throwing paper in class. Full episode now streaming.">
+    <meta name="keywords" content="GhostVista, GhostVista Gets Grounded, Season 1 Episode 1, Boring Class, full episode, animated series">
+    <meta name="author" content="GhostVista Team">
+    <meta property="article:published_time" content="2021-11-21T00:00:00Z">
+    <meta property="article:section" content="Episodes">
+    <link rel="canonical" href="https://ghostvistagetsgrounded.com/episodes/s1e1.html">
+    
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Main container */
+        .episode-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+            animation: fadeIn 0.6s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Video container with loading animation */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            margin: 1.5rem 0 2.5rem;
+            background: linear-gradient(45deg, #0a0a1a 0%, #1a1a2e 100%);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .video-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(41, 98, 255, 0.1) 0%, rgba(100, 181, 246, 0.05) 100%);
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        /* Episode info card */
+        .episode-info {
+            background: linear-gradient(145deg, #1a1a2e, #16213e);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin: 2rem 0;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .episode-info::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--accent-color), #64b5f6);
+        }
+        
+        .episode-info:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Episode title with animation */
+        .episode-title {
+            color: var(--accent-color);
+            margin: 0 0 1.5rem;
+            font-size: 2.2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-color), #64b5f6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+            position: relative;
+            line-height: 1.3;
+            letter-spacing: -0.5px;
+        }
+        
+        .episode-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-color), transparent);
+            border-radius: 3px;
+        }
+        
+        /* Episode meta information */
+        .episode-meta {
+            color: #8e9aaf;
+            margin: 0 0 2rem;
+            font-size: 1rem;
+            display: block;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 0.3px;
+        }
+        
+        .episode-meta span {
+            display: inline-flex;
+            align-items: center;
+            margin-right: 1.2rem;
+            position: relative;
+        }
+        
+        .episode-meta span:not(:last-child)::after {
+            content: '•';
+            margin-left: 1.2rem;
+            color: #4a4a6a;
+        }
+        
+        /* Episode description */
+        .episode-description {
+            line-height: 1.8;
+            font-size: 1.1rem;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .episode-description p {
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .episode-description p::before {
+            content: '»';
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+            opacity: 0.7;
+        }
+        
+        /* Episode navigation */
+        .episode-navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3.5rem;
+            padding-top: 2.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            position: relative;
+        }
+        
+        .episode-navigation::before {
+            content: 'More Episodes';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #0f0f1a;
+            padding: 0 1.5rem;
+            color: #8e9aaf;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        /* Navigation buttons */
+        .nav-button {
+            padding: 0.9rem 2rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 6px;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            box-shadow: 0 4px 15px rgba(41, 98, 255, 0.2);
+        }
+        
+        .nav-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+            transition: width 0.4s ease;
+            z-index: -1;
+        }
+        
+        .nav-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(41, 98, 255, 0.3);
+        }
+        
+        .nav-button:hover::before {
+            width: 100%;
+        }
+        
+        .nav-button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 10px rgba(41, 98, 255, 0.3);
+        }
+        
+        .nav-button.next::after {
+            content: '→';
+            display: inline-block;
+            margin-left: 0.3rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .nav-button.next:hover::after {
+            transform: translateX(3px);
+        }
+        
+        .nav-button.next {
+            margin-left: auto;
+        }
+        
+        /* Video player styling with loading animation */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            background: linear-gradient(45deg, #0a0a1a 0%, #1a1a2e 100%);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin: 1.5rem 0 2.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .video-container::after {
+            content: 'Loading...';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.1rem;
+            font-weight: 500;
+            z-index: 1;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; }
+            100% { opacity: 0.6; }
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../Images/GVGG.png" alt="GhostVista Gets Grounded Logo">
+            </a>
+        </div>
+        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../seasons.html">Seasons</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Include Open Graph Tags Script -->
+    <script src="../js/og-tags.js"></script>
+    <script>
+        // Set page-specific Open Graph tags
+        setOGTags({
+            title: 'S1E1: Boring Class - GhostVista Gets Grounded',
+            description: 'Watch Episode 1: Boring Class - GhostVista gets in trouble for throwing paper in class and gets sent to the principal\'s office.',
+            image: window.location.origin + '/Images/Season1.webp',
+            url: window.location.href,
+            type: 'video.episode',
+            video: {
+                duration: 41,
+                releaseDate: '2021-11-21T00:00:00Z'
+            }
+        });
+    </script>
+    <main class="episode-container">
+        <div class="video-wrapper" style="width: 100%; max-width: 1000px; margin: 0 auto; background: #0a0a1a; border-radius: 12px; overflow: hidden; position: relative;">
+            <video 
+                id="episode-video"
+                width="100%"
+                height="auto"
+                controls
+                controlsList="nodownload"
+                preload="auto"
+                style="display: block;"
+                poster="../Images/thumbnail-s1e1.jpg">
+                <source src="../Videos/Ghost Vista Gets Grounded Season 1 Episode 1 - Boring Class.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </div>
+        
+        <div class="language-selector" style="max-width: 1000px; margin: 0 auto 2rem; text-align: right;">
+            <select onchange="window.location.href=this.value" style="padding: 0.5rem 1rem; border-radius: 20px; background: #1a1a2e; color: #fff; border: 1px solid rgba(255, 255, 255, 0.1); cursor: pointer; font-size: 0.9rem;">
+                <option value="s1e1.html">🇬🇧 English</option>
+                <option value="s1e1_es.html" disabled>🇪🇸 Español (Coming Soon)</option>
+                <option value="s1e1_fr.html" disabled>🇫🇷 Français (Coming Soon)</option>
+            </select>
+        </div>
+        
+        <div class="episode-info">
+            <h2 class="episode-title">Episode 1: Boring Class</h2>
+            <div class="episode-meta">
+                <span>Season 1, Episode 1 • Aired: November 21, 2021 • 41 sec</span>
+            </div>
+            
+            <div class="episode-description">
+                <p>In the series premiere, GhostVista is bored out of his mind in class. As the teacher drones on, he starts throwing paper airplanes to amuse himself. But when one of his throws goes awry and hits the teacher, chaos ensues.</p>
+                
+                <p>Sent to the principal's office, GhostVista tries to talk his way out of trouble, but his excuses only dig him deeper. Will he be able to avoid suspension, or is he about to learn a hard lesson about classroom behavior? This hilarious first episode introduces us to GhostVista's mischievous side and his knack for finding trouble.</p>
+            </div>
+            
+            <div class="episode-navigation">
+                <a href="#" class="nav-button" style="visibility: hidden;">
+                    <span>← Previous Episode</span>
+                </a>
+                <a href="#" class="nav-button next">
+                    <span>Next Episode →</span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <img src="../Images/GVGG.png" alt="GhostVista Gets Grounded Logo" class="footer-logo">
+        <p>&copy; 2025 GhostVista Gets Grounded. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/mobile-menu.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.getElementById('episode-video');
+            
+            // Try to autoplay the video
+            const playVideo = () => {
+                if (video.readyState >= 2) { // HAVE_CURRENT_DATA
+                    const playPromise = video.play();
+                    if (playPromise !== undefined) {
+                        playPromise.catch(err => {
+                            console.log('Autoplay prevented, user interaction required');
+                        });
+                    }
+                }
+            };
+            
+            // Try to play when metadata is loaded
+            video.addEventListener('loadedmetadata', playVideo);
+            
+            // Fallback in case loadedmetadata doesn't fire
+            setTimeout(playVideo, 1000);
+        });
+    </script>
+</body>
+</html>

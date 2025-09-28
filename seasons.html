@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Seasons - GhostVista Gets Grounded</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Images/GVGG.png">
+    <link rel="apple-touch-icon" href="Images/GVGG.png">
+    
+    <!-- OpenGraph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ghostvistagetsgrounded.com/seasons.html">
+    <meta property="og:title" content="GhostVista Gets Grounded - All Seasons">
+    <meta property="og:description" content="Watch all seasons of GhostVista Gets Grounded. Follow GhostVista's hilarious misadventures as he navigates the challenges of being grounded.">
+    <meta property="og:image" content="https://ghostvistagetsgrounded.com/Images/GVGG.png">
+    <meta property="og:site_name" content="GhostVista Gets Grounded">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GhostVista Gets Grounded - All Seasons">
+    <meta name="twitter:description" content="Watch all seasons of GhostVista Gets Grounded. Follow GhostVista's hilarious misadventures as he navigates the challenges of being grounded.">
+    <meta name="twitter:image" content="https://ghostvistagetsgrounded.com/Images/GVGG.png">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="description" content="Browse and watch all seasons of GhostVista Gets Grounded. The complete collection of GhostVista's adventures while being grounded.">
+    <meta name="keywords" content="GhostVista, GhostVista Gets Grounded, all seasons, animated series, full episodes">
+    <meta name="author" content="GhostVista Team">
+    <link rel="canonical" href="https://ghostvistagetsgrounded.com/seasons.html">
+    
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .seasons-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 2rem 4rem;
+        }
+        
+        .page-description {
+            text-align: center;
+            color: #aaa;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+        
+        .season-card {
+            background: linear-gradient(145deg, #1a1a2e, #16213e);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin-bottom: 3rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .season-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .season-header {
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .season-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-color), transparent);
+        }
+        
+        .season-title {
+            margin: 0;
+            font-size: 1.8rem;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .episode-list {
+            padding: 2rem;
+        }
+        
+        .episode-item {
+            padding: 1.5rem;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.02);
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .episode-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateX(5px);
+        }
+        
+        .episode-item:last-child {
+            border-bottom: none;
+        }
+        
+        .episode-info h3 {
+            margin: 0 0 0.5rem;
+            color: #fff;
+            font-size: 1.2rem;
+        }
+        
+        .episode-meta {
+            color: #8e9aaf;
+            font-size: 0.9rem;
+            margin: 0 0 0.5rem;
+            gap: 1rem;
+        }
+        
+        .episode-desc {
+            color: #b8c2cc;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .season-actions {
+            margin: 1.5rem 0;
+            text-align: left;
+        }
+        
+        .view-all-button {
+            display: inline-block;
+            padding: 0.8rem 1.8rem;
+            background-color: transparent;
+            color: var(--accent-color);
+            border: 2px solid var(--accent-color);
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-bottom: 1rem;
+        }
+        
+        .view-all-button:hover {
+            background-color: var(--accent-color);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+        
+        .view-season {
+            background: var(--accent-color);
+            color: white;
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+        
+        .view-season:hover {
+            background: #1e88e5;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(30, 136, 229, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="Images/GVGG.png" alt="GhostVista Gets Grounded Logo">
+            </a>
+        </div>
+        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="seasons.html" class="active">Seasons</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="seasons-container">
+        <h1>All Seasons</h1>
+        <p class="page-description">Explore all the adventures of GhostVista Gets Grounded across multiple seasons. From the very beginning to the latest episodes, follow GhostVista's journey through extraordinary circumstances.</p>
+        
+        <!-- Season 1 -->
+        <div class="season-card">
+            <div class="season-header">
+                <h2 class="season-title">Season 1: The Grounding Chronicles</h2>
+                <span class="season-year">2025</span>
+            </div>
+            <div class="episode-list">
+                <div class="episode-item">
+                    <div class="episode-info">
+                        <h3>Episode 1: Boring Class</h3>
+                        <p class="episode-meta">
+                            <span>Premiered: September 27, 2025</span>
+                            <span>•</span>
+                            <span>22 min</span>
+                        </p>
+                        <p class="episode-desc">GhostVista's first day of being grounded takes an unexpected turn when he discovers a mysterious portal in his room.</p>
+                        <div class="season-actions">
+                            <a href="seasons/season1.html" class="view-all-button">View All 7 Episodes</a>
+                        </div>
+                    </div>
+                    <a href="episodes/s1e1.html" class="watch-button">Watch Now</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Upcoming Seasons -->
+        <div class="upcoming-seasons">
+            <h2>Coming Soon</h2>
+            <div class="season-grid">
+                <!-- Season 2 -->
+                <div class="season-card upcoming">
+                    <div class="season-header">
+                        <h3 class="season-title">Season 2: Beyond the Portal</h3>
+                        <span class="season-year">2026</span>
+                    </div>
+                    <div class="season-teaser">
+                        <p>GhostVista explores the mysterious world beyond the portal, making new friends and facing unexpected challenges.</p>
+                        <span class="coming-soon-tag">Coming 2026</span>
+                    </div>
+                </div>
+
+                <!-- Season 3 -->
+                <div class="season-card upcoming">
+                    <div class="season-header">
+                        <h3 class="season-title">Season 3: Time Twists</h3>
+                        <span class="season-year">2026</span>
+                    </div>
+                    <div class="season-teaser">
+                        <p>Time itself begins to unravel as GhostVista discovers his actions have unexpected consequences across multiple timelines.</p>
+                        <span class="coming-soon-tag">Coming 2026</span>
+                    </div>
+                </div>
+
+                <!-- Season 4 -->
+                <div class="season-card upcoming">
+                    <div class="season-header">
+                        <h3 class="season-title">Season 4: The Hidden Truth</h3>
+                        <span class="season-year">2026</span>
+                    </div>
+                    <div class="season-teaser">
+                        <p>GhostVista uncovers long-buried family secrets that will change everything he thought he knew about his life.</p>
+                        <span class="coming-soon-tag">Coming 2026</span>
+                    </div>
+                </div>
+
+                <!-- Seasons 5-12 -->
+                <div class="season-card upcoming">
+                    <div class="season-header">
+                        <h3 class="season-title">Seasons 5-12</h3>
+                        <span class="season-year">2027+</span>
+                    </div>
+                    <div class="season-teaser">
+                        <p>More thrilling adventures are in development! Stay tuned for updates on future seasons.</p>
+                        <span class="coming-soon-tag">In Development</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <img src="Images/GVGG.png" alt="GhostVista Gets Grounded Logo" class="footer-logo">
+        <p>&copy; 2025 GhostVista Gets Grounded. All rights reserved.</p>
+    </footer>
+
+    <!-- Include Open Graph Tags Script -->
+    <script src="js/og-tags.js"></script>
+    <script>
+        // Set page-specific Open Graph tags
+        setOGTags({
+            title: 'GhostVista Gets Grounded - All Seasons',
+            description: 'Watch all seasons of GhostVista Gets Grounded. Follow GhostVista\'s hilarious misadventures as he navigates the challenges of being grounded.',
+            image: window.location.origin + '/Images/GVGG.png',
+            url: window.location.href
+        });
+    </script>
+    
+    <script src="js/mobile-menu.js"></script>
+</body>
+</html>
